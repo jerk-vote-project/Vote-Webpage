@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 import { Menu } from "semantic-ui-react";
+import React from 'react'
 
-export default function Gnb() {
+const Gnb: React.FC = () => {
   const router = useRouter();
   let activeItem;
 
@@ -30,3 +31,6 @@ export default function Gnb() {
     </Menu>
   );
 }
+
+
+export default Gnb;

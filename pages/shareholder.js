@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import Login from '../components/Login'
+import LoginForm from '../components/LoginForm'
 
 export default function Shareholder() {
     return (
         <div>
-            <Login></Login>
+            <LoginForm />
         </div>
     )
 }

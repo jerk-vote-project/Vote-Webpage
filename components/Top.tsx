@@ -1,7 +1,8 @@
 import { Header } from "semantic-ui-react";
 import Gnb from "./Gnb";
+import React from 'react'
 
-export default function Top() {
+const Top: React.FC = () => {
   return (
     <div>
       <div style={{ display: "flex", paddingTop: 20 }}>
@@ -13,3 +14,5 @@ export default function Top() {
     </div>
   );
 }
+
+export default Top;

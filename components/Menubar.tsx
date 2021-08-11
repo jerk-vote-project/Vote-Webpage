@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 import { Icon } from 'semantic-ui-react'
 import Link from 'next/link'
 
-const styled = {
+const styled: CSSProperties = {
     display: "flex",
     justifyContent: "center",
-    position: "flex",
+    // position: "flex",
     padding: "15px",
     color: "black"
 }
@@ -14,10 +14,10 @@ const ItemStyled = {
     margin: "20px",
 }
 
-export default function Menubar() {
+const Menubar: React.FC = () => {
     return (
         <div style={styled}>
-            <Link href="/shareholders" >
+            <Link href="/shareholder" >
                 <a style={ItemStyled}>
                     <Icon name='users' size='huge'/>        
                     <br />
@@ -35,3 +35,5 @@ export default function Menubar() {
         </div>
     )
 }
+
+export default Menubar;

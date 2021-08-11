@@ -1,4 +1,6 @@
-export default function Footer() {
+import React from 'react'
+
+const Footer: React.FC = () => {
     return (
       <div
         style={{
@@ -12,3 +14,5 @@ export default function Footer() {
       </div>
     );
   }
+
+export default Footer;
